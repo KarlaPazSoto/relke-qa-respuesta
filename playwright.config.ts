@@ -2,11 +2,12 @@ import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
   use: {
-    headless: true,
+    headless: false,
     viewport: { width: 1280, height: 800 },
     baseURL: 'https://demo.relbase.cl',
     ignoreHTTPSErrors: true,
   },
-  testDir: './tests',
+  // testDir: './tests',
   timeout: 30000,
+  
 });
